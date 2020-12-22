@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGame pack viewer</title>
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+    <script src="./assets/js/jszip.min.js"></script>
+    <script src="./assets/js/filesaver.min.js"></script>
+    <script src="./assets/js/dom2image.js"></script>
+    <script src="./class/SIPack.js?ts=1"></script>
+    <script src="./assets/js/crunchy.js?ts=1"></script>
+
+    <link rel="icon" type="image/png" href="./assets/img/icon_64.png" />
+    <link rel="apple-touch-icon" href="./assets/img/icon_256.png" />
+
+    <meta name="theme-color" content="#2C3552" />
+    <meta property="og:title" content="SIGame pack viewer" />
+    <meta property="og:description" content="Просмотр тем в пакете .siq" />
+    <meta property="og:site_name" content="sipv.suyazov.com" />
+    <meta property="og:url" content="https://sipv.suyazov.com/" />
+    <meta property="og:image" content="https://sipv.suyazov.com/assets/img/icon_256.png" />
+    <meta property="og:image:width" content="256" />
+    <meta property="og:image:height" content="256" />
+</head>
+
+<body>
+    <div class="dropzone dropzone_hidden">
+        <div class="dropzone__text">Drop anywhere!</div>
+    </div>
+
+    <header class="header">
+        <h1 class="title">Предпросмотр пакетов SIGame</h1>
+        <div class="header__info">
+            <div class="info__preupload">
+                Переместите в это окно файл с паком
+            </div>
+            <div class="info__errors"  style="display: none;">
+                Ошибка при чтении файла. Возможно вы пытаетесь загрузить неправильный файл, или архив испорчен.
+            </div>
+        </div>    
+    </header>
+
+    <main class="app">
+        <div class="app__controls" style="display: none;">
+            <button class="btn btn_changeView">Сменить отображение</button>
+            <button class="btn btn_downloadShot">Скачать скриншот</button>
+        </div>
+        <div class="app__container">
+            <div class="information">
+
+            </div>
+    
+            <div class="rounds">
+    
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <a href="https://suyazov.com" target="_blank" class="footer__copy">2020 | by Nesilar</a>
+    </footer>
+</body>
+
+</html>
