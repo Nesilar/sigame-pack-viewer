@@ -135,6 +135,11 @@ body {
     margin-bottom: 20px;
 }
 
+.rounds {
+    width: fit-content;
+    margin: 0 auto;
+}
+
 .round {
     color: #ffe682;
     font-size: 22px;
