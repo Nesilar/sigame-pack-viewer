@@ -123,6 +123,13 @@ body {
     padding: 10px;
 }
 
+.watermark {
+    text-align: end;
+    font-size: 18px;
+    margin-top: 18px;
+    display: none;
+}
+
 .information {
     font-size: 20px;
     

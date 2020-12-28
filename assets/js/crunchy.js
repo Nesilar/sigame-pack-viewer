@@ -213,12 +213,16 @@ function dataURItoBlob(dataURI) {
 // Make screenshot and download
 function takeshot() {
     let app = document.querySelector('.app__container');
+    let watermark = document.querySelector('.watermark');
+    watermark.style.display = "block";
     domtoimage.toPng(app)
     .then (function (dataURI) {
         saveAs(dataURItoBlob(dataURI), packs[0].info.name + "__screenshot_by_SIPack.png");
+        watermark.style.display = "none";
     })
     .catch(function (error) {
         console.error('Oops :\\ ', error);
+        watermark.style.display = "none";
     });
 } 
 
